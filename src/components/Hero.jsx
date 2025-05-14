@@ -7,7 +7,8 @@ function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 py-16">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+            {/* Add padding-top only for mobile view */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6 pt-35 sm:pt-4">
               Connect Your Business <br className="hidden sm:block" />
               <span className="text-emerald-400">To The Future</span>
             </h1>
@@ -25,18 +26,19 @@ function Hero() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 mt-12 lg:mt-0 relative">
+          <div className="w-full lg:w-1/2 mt-12 lg:mt-0 relative hidden sm:block">
             <img
               src="/bg.png"
               alt="Earth"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white  sm:text-4xl">
+              <p className="text-white sm:text-4xl">
                 NetSphere
               </p>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
