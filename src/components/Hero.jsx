@@ -7,8 +7,7 @@ function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 py-16">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
-            {/* Add padding-top only for mobile view */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6 pt-35 sm:pt-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6 pt-32 sm:pt-4">
               Connect Your Business <br className="hidden sm:block" />
               <span className="text-emerald-400">To The Future</span>
             </h1>
