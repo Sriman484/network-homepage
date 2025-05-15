@@ -50,9 +50,12 @@ const About = () => (
               <StatCard key={index} {...stat} />
             ))}
           </div>
-          <button className="px-8 py-3 rounded-md bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition duration-200">
-            Learn More About Us
-          </button>
+          <div className="flex justify-center">
+            <button className="px-8 py-3 rounded-md bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition duration-200">
+              Learn More About Us
+            </button>
+          </div>
+
 
         </div>
 

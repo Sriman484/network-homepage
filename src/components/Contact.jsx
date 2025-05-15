@@ -1,90 +1,92 @@
 import React from 'react';
 
-
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-5">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600">
+    <section id="contact" className="py-24 bg-gray-100">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-3">Get In Touch</h2>
+          <div className="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-gray-700 max-w-xl mx-auto">
             Ready to elevate your network infrastructure? Contact us today to schedule a consultation.
           </p>
         </div>
-        <div className="flex justify-center">
-          <div className="bg-white rounded-xl shadow-md p-8 md:p-12 w-full max-w-3xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Send Us a Message</h3>
-            <form>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    placeholder="Your First Name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="last-name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    placeholder="Your Last Name"
-                  />
-                </div>
-              </div>
 
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="user@example.com"
-                />
-              </div>
+        <div className="bg-white rounded-2xl shadow-xl p-10 max-w-3xl mx-auto">
+          <h3 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
+            Send Us a Message
+          </h3>
 
-              <div className="mb-6">
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                  Company
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label htmlFor="first-name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  First Name
                 </label>
                 <input
                   type="text"
-                  id="company"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="Your Company"
+                  id="first-name"
+                  placeholder="Your First Name"
+                  className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition"
                 />
               </div>
 
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message
+              <div>
+                <label htmlFor="last-name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Last Name
                 </label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="Any additional information you would like to provide..."
-                ></textarea>
+                <input
+                  type="text"
+                  id="last-name"
+                  placeholder="Your Last Name"
+                  className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition"
+                />
               </div>
+            </div>
 
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-emerald-600 text-white font-medium rounded-md hover:bg-emerald-700 transition-colors duration-200"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="user@example.com"
+                className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                Company
+              </label>
+              <input
+                type="text"
+                id="company"
+                placeholder="Your Company"
+                className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Any additional information you would like to provide..."
+                className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm resize-none focus:ring-emerald-500 focus:border-emerald-500 focus:outline-none transition"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>
