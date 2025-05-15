@@ -52,7 +52,7 @@ function Hero() {
               <button className="px-8 py-4 rounded-md bg-emerald-600 text-white font-medium hover:bg-emerald-700 transition-all duration-200 transform hover:-translate-y-1">
                 Get Started
               </button>
-              <button className="px-8 py-4 rounded-md border border-white text-white font-medium hover:bg-white hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center">
+              <button className="px-8 py-4 rounded-md border border-white text-white font-medium hover:bg-white hover:text-black hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center">
                 Learn More
                 <ArrowRight size={18} className="ml-2" />
               </button>
